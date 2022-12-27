@@ -1,17 +1,18 @@
 package steps;
 
-import base.Hooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.WebDriver;
 import pages.MainPage;
 
-public class LogInSteps extends Hooks {
+import static base.CukesFeatureRunner.driver;
+
+public class LogInSteps  {
 
     @Given("I am on the main page")
-    public void iAmOnTheMainPage() { driver.get("https://foxfishing.ru/");
+    public void iAmOnTheMainPage() {
+        driver.get("https://foxfishing.ru/");
     }
 
     @When("I press log in button")
