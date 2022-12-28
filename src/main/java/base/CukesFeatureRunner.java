@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.junit.CucumberOptions;
 
+import java.util.concurrent.TimeUnit;
+
 import static base.ChromeDriveOptions.getOptions;
 
 @RunWith(Cucumber.class)
@@ -23,10 +25,13 @@ public class CukesFeatureRunner {
     @Before
     public void beforeClass() {
         driver = new ChromeDriver(getOptions());
+        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @After
     public void afterClass() {
+        driver.close();
         driver.quit();
     }
 }

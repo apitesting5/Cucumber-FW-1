@@ -9,7 +9,7 @@ public class ChromeDriveOptions {
         //options.addArguments("--headless");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
-        options.addArguments("window-size=1280,768");
+        options.addArguments("start-maximized");
         WebDriverManager.chromedriver().setup();
         return options;
     }
