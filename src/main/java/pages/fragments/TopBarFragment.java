@@ -9,7 +9,7 @@ import static org.openqa.selenium.support.PageFactory.initElements;
 
 public class TopBarFragment {
 
-    @FindBy(xpath = "//button[@class='nav-link']/span[text()='Войти']")
+    @FindBy(xpath = "//button[@class='btn login-btn']")
     private WebElement loginBtn;
 
     private WebDriver driver;
