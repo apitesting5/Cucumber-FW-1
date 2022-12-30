@@ -26,7 +26,7 @@ public class CukesFeatureRunner {
     public void beforeClass() {
         driver = new ChromeDriver(getOptions());
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
     @After
