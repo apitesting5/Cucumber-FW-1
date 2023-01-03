@@ -1,4 +1,4 @@
-package base;
+package settings;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
