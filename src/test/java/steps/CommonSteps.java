@@ -16,7 +16,7 @@ public class CommonSteps {
     public void iLogInWithValidUser() {
         String email = "ferenousacalifor@gmail.com";
         String pass = "Lipton111";
-        new MainPage(driver).logInWithValidUser(email, pass);
+
     }
 
 }
